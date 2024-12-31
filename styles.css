@@ -1,0 +1,227 @@
+/* تنسيق الجسم العام */
+body {
+    font-family: Arial, sans-serif; /* تحديد نوع الخط */
+    margin: 0;
+    padding: 0;
+    background-color: #b3b0b0; /* خلفية الصفحة */
+}
+
+/* تنسيق شريط التنقل عند وضعه في الجزء العلوي */
+nav {
+    background-color: #d1baba; /* خلفية داكنة */
+    position: sticky; /* شريط التنقل يبقى في الأعلى عند التمرير */
+    top: 0; /* التثبيت في الأعلى */
+    width: 100%; /* الشريط يأخذ عرض الصفحة بالكامل */
+    z-index: 1000; /* التأكد من أن الشريط يبقى في الأمام */
+}
+
+/* تنسيق قائمة شريط التنقل */
+nav ul {
+    list-style-type: none; /* إزالة النقاط من القائمة */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* محاذاة العناصر إلى المنتصف */
+}
+
+/* تنسيق كل عنصر في القائمة */
+nav ul li {
+    display: inline-block; /* ترتيب العناصر أفقياً */
+}
+
+/* تنسيق الروابط في شريط التنقل */
+nav a {
+    display: inline-block;
+    padding: 14px 20px; /* إضافة الحواف */
+    color: white; /* النص باللون الأبيض */
+    text-decoration: none; /* إزالة التسطير من الروابط */
+    font-size: 18px; /* تحديد حجم الخط */
+}
+
+/* تأثيرات التمرير على الروابط */
+nav a:hover {
+    font-weight: bold; /* جعل النص عريضًا عند التمرير */
+    text-decoration: underline; /* إضافة تسطير النص عند التمرير */
+}
+
+/* تنسيق الهيدر الذي يحتوي على الاسم */
+.header {
+    text-align: left; /* محاذاة الاسم لليسار */
+    padding: 20px; /* إضافة حواف */
+    background-color: #fff; /* خلفية بيضاء */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف أسفل الهيدر */
+}
+
+/* تنسيق اسم الشخص داخل الهيدر */
+.header h1 {
+    font-size: 24px; /* حجم الخط */
+    font-weight: bold; /* جعل الخط عريض */
+    color: #d8859e; /* اللون الداكن */
+    margin: 0; /* إزالة الهوامش */
+}
+
+/* تنسيق قسم "About Me" */
+#about {
+    padding: 40px 20px; /* إضافة حواف للمحتوى */
+    background-color: #f4f0f0; /* خلفية بيضاء */
+    margin: 20px 0; /* هوامش بين الأقسام */
+    text-align: center;
+}
+
+#about img {
+    width: 150px; /* عرض الصورة */
+    height: 150px; /* ارتفاع الصورة */
+    border-radius: 50%; /* جعل الصورة دائرية */
+    margin-bottom: 20px; /* إضافة مسافة أسفل الصورة */
+}
+
+#about h2 {
+    font-size: 24px; /* حجم الخط */
+    color: #333; /* اللون الداكن */
+}
+
+#about p {
+    font-size: 18px; /* حجم الخط */
+    color: #666; /* لون النص الفاتح */
+}
+
+/* تنسيق قسم "Skills" */
+#skills {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* خلفية فاتحة */
+    text-align: center;
+}
+
+#skills .skill {
+    display: inline-block;
+    margin: 20px; /* مسافة بين المهارات */
+}
+
+#skills img {
+    width: 50px; /* حجم الشعار */
+    height: 50px; /* حجم الشعار */
+}
+
+#skills p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* تنسيق قسم "Projects" */
+#projects {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+#projects .project {
+    margin: 20px 0; /* مسافة بين المشاريع */
+    padding: 20px;
+    background-color: #f9f9f9; /* خلفية فاتحة للمشاريع */
+    border-radius: 5px;
+}
+
+#projects h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+#projects p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* تنسيق قسم "Recommendations" */
+#recommendations {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#recommendations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recommendations li {
+    margin-bottom: 10px; /* مسافة بين التوصيات */
+    font-size: 18px;
+    color: #333;
+}
+
+/* تنسيق التوصيات الجديدة */
+#recommendation-form {
+    margin-top: 20px;
+}
+
+#recommendation-form input,
+#recommendation-form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* تنسيق الرسالة المنبثقة عند تقديم التوصية */
+.popup-message {
+    display: none; /* إخفاء الرسالة في البداية */
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1001; /* لضمان ظهورها فوق باقي المحتوى */
+}
+
+/* تنسيق زر "Home" */
+./* تنسيق زر "Home" */
+.home-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333; /* خلفية داكنة */
+    color: white;
+    padding: 15px 20px; /* إضافة حواف حول الأيقونة */
+    border-radius: 50%; /* جعل الزر دائري الشكل */
+    font-size: 24px; /* حجم الأيقونة */
+    text-align: center;
+    cursor: pointer; /* تغيير المؤشر عند التمرير */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف */
+    transition: background-color 0.3s ease; /* تأثير التحول عند التمرير */
+}
+
+/* تغيير اللون عند التمرير على الزر */
+.home-icon:hover {
+    background-color: #555; /* تغيير اللون عند التمرير */
+}
+
+/* تأثير التحول عند التمرير على الزر */
+.home-icon:active {
+    transform: scale(0.9); /* تقليص الزر عند الضغط عليه */
+}
+/* تنسيق النافذة المنبثقة */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #333;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #45a049;
+}
+

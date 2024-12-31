@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+
+
+  
+    <div class="header">
+        <h1>Norah Abdualdaim </h1>
+    </div>
+  
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Project Details</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+    </ul>
+  </nav> 
+
+  
+  <section id="about">
+    <img src="c:\Users\ASUS\Downloads\img.jpeg" alt="Profile Picture">
+    <h2>Eng Norah</h2>
+    <p>I am a senior Software Engineering student with a strong passion for enhancing my programming and technical skills. I value self-learning and am always eager to stay updated with the latest advancements in software and technology.</p>
+  </section>
+
+  
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="html">
+      <img src="c:\Users\ASUS\Downloads\Cómo puedo ver el código fuente de una página web en html - yoSEO.jpeg" alt="HTML5">
+      <p>HTML</p>
+    </div>
+    <div class="css">
+      <img src="c:\Users\ASUS\Downloads\Css Sticker _ Css.jpeg" alt="CSS3">
+      <p>CSS</p>
+    </div>
+    <div class="JavaScript">
+      <img src="c:\Users\ASUS\Downloads\JavaScript Fundamentals_ A Course for Absolute Beginners.jpeg" alt="Js">
+      <p>JavaScript</p>
+    </div>
+  </section>
+
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Real-Time Weather Connector</h3>
+      <p>This project develops a communication system between a server and a client using the Transmission Control Protocol (TCP) in C#. The server retrieves weather data from the OpenWeather API and sends it to the client once a connection is established. The client then displays the received weather data, which includes the city name, weather conditions, temperature, humidity, and wind speed. This project provides a simple yet effective model for establishing a reliable and secure TCP connection between a server and a client, demonstrating core concepts of network programming.</p>
+    </div>
+    <div class="project">
+      <h3>Stock Input Counter     </h3>
+      <p>The Assembly Stock Input Counter  program is a simple program written in Assembly language that performs counting and display of the selected products. The program allows users to choose from three products, and upon selection, a confirmation message for the chosen product is displayed, along with an increment in the count of selected products. Additionally, the program allows users to choose to continue inputting or to exit..</p>
+    </div>
+    <div class="project">
+      <h3>Convert from kg to Ibs & Ibs to kg (Java)</h3>
+      
+    </div>
+  </section>
+
+  
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <form id="recommendation-form">
+      <input type="text" id="new-recommendation" placeholder="Add a new recommendation">
+      <button type="submit">Submit</button>
+    </form>
+    <ul id="recommendation-list">
+        <li>Good programer</li>
+        <li>Good programer:)</li>
+        <li>Good programer;)</li>
+      
+    </ul>
+  </section>
+<!-- زر تقديم التوصية -->
+<button onclick="submitRecommendation()">Submit Recommendation</button>
+
+<!-- نافذة منبثقة -->
+<div id="popup" class="popup" style="display:none;">
+    <p>Thank you for submitting a recommendation!</p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+  <!-- زر العودة إلى الصفحة الرئيسية (Home) -->
+<div class="home-icon" onclick="window.location.href = 'index.html';">
+    🏠
+</div>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  <script src="script.js"></script>
+</body>
+</html>
